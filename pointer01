@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[]={10,11,-1,56,67,5,4};
+	int *p,*q;
+	p=&a[3];
+	printf("%d\n",*p);
+	printf("%d\n",*p++);
+	printf("%d\n",*p);
+	printf("%d\n",*--p);
+	printf("%d\n",*p);
+	printf("\n%d\n%d\n%d\n",*--p,*p,*++p);
+	printf("%d",*p);
+	printf("\n\n");
+	int s[]={3,2,6,7};
+int *b;
+b=s;
+printf("%d\n%d",*b++,*b++);
+	
+	
+}
+/*
+56
+56
+67
+56
+56
+
+56
+67
+67
+56
+
+2
+3
+*/
