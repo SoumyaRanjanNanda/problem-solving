@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a[]={10,11,-1,56,67,54};
+	int *p,*q;
+	p=a;
+	printf("%d\n",*p);
+printf("%d\n%d\n%d\n",(*p)++,*p++,*++p);
+
+    q=p+3;
+    printf("%d\n",*q-3);
+      printf("%d\n",*--p+5);
+      printf("%d\n",*p+*q);
+    return 0;
+}
+/*
+10
+-1
+11
+11
+51
+16
+65
+*/
