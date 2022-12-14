@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char jes[]="jharsuguda Engineering school";
+	int i,j=1;
+	char *p=jes;
+	
+	printf("%c\n",*p);
+	printf("%c\n",*(p++ + 1));
+	printf("%c\n",*((p-- + 5)-1)+3);
+	printf("%c\n",*(++p+10)-22);
+	printf("%c\n",*p,*++p,*--p);
+	return 0;
+}
+/*
+j
+h
+x
+/
+h
+*/
