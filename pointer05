@@ -10,7 +10,7 @@ int main()
 	printf("%c\n",*(p++ + 1));
 	printf("%c\n",*((p-- + 5)-1)+3);
 	printf("%c\n",*(++p+10)-22);
-	printf("%c\n",*p,*++p,*--p);
+	printf("%c %c %c\n",*p,*++p,*--p);
 	return 0;
 }
 /*
@@ -19,4 +19,6 @@ h
 x
 /
 h
+h
+j
 */
