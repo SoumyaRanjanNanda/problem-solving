@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,i,*ptr;
+	printf("enter the numbers of values");
+	scanf("%d",&n);
+	ptr=(int*)malloc(n*sizeof(int)); // intialization of a pointer using malloc fuction
+	printf("enter values");          
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",(ptr+i));
+	}
+	
+	printf("you enters values are");
+		for(i=0;i<n;i++)
+	{
+		printf("%d",*(ptr+i));
+	}
+	free(ptr);                     // free the space of heap
+}
+/*
+enter the numbers of values7
+enter values1
+2
+3
+4
+5
+6
+7
+you enters values are1234567
+*/
