@@ -3,7 +3,7 @@
 int main()
 {
 	char jes[]="jharsuguda Engineering school";
-	int i,j=1;
+	int i;
 	char *p=jes;
 	
 	printf("%c\n",*p);
